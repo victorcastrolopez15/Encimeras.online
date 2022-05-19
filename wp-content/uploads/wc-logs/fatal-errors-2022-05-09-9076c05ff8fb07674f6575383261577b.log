@@ -1,0 +1,19 @@
+2022-05-09T06:55:16+00:00 CRITICAL Uncaught Error: Class "Yoast\WP\SEO\Surfaces\Helpers_Surface" not found in C:\xampp\htdocs\encimeras.online\wp-content\plugins\wordpress-seo\src\generated\container.php:4666
+Stack trace:
+#0 C:\xampp\htdocs\encimeras.online\wp-content\plugins\wordpress-seo\vendor_prefixed\symfony\dependency-injection\Container.php(271): Yoast\WP\SEO\Generated\Cached_Container->getHelpersSurfaceService()
+#1 C:\xampp\htdocs\encimeras.online\wp-content\plugins\wordpress-seo\lib\abstract-main.php(65): YoastSEO_Vendor\Symfony\Component\DependencyInjection\Container->get('Yoast\\WP\\SEO\\Su...')
+#2 C:\xampp\htdocs\encimeras.online\wp-content\plugins\wordpress-seo\inc\class-addon-manager.php(616): Yoast\WP\Lib\Abstract_Main->__get('helpers')
+#3 C:\xampp\htdocs\encimeras.online\wp-content\plugins\wordpress-seo\inc\class-addon-manager.php(602): WPSEO_Addon_Manager->get_slug_by_plugin_file('adapta-rgpd/ada...')
+#4 [internal function]: WPSEO_Addon_Manager->is_yoast_addon('adapta-rgpd/ada...')
+#5 C:\xampp\htdocs\encimeras.online\wp-content\plugins\wordpress-seo\inc\class-addon-manager.php(635): array_filter(Array, Array, 2)
+#6 C:\xampp\htdocs\encimeras.online\wp-content\plugins\wordpress-seo\inc\class-addon-manager.php(109): WPSEO_Addon_Manager->get_installed_addons()
+#7 C:\xampp\htdocs\encimeras.online\wp-includes\class-wp-hook.php(307): WPSEO_Addon_Manager->register_expired_messages('')
+#8 C:\xampp\htdocs\encimeras.online\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#9 C:\xampp\htdocs\encimeras.online\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\encimeras.online\wp-settings.php(450): do_action('plugins_loaded')
+#11 C:\xampp\htdocs\encimeras.online\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\encimeras.online\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\encimeras.online\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+  thrown en C:\xampp\htdocs\encimeras.online\wp-content\plugins\wordpress-seo\src\generated\container.php en la línea 4666
+
